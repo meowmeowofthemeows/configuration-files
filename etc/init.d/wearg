@@ -1,0 +1,20 @@
+#!/sbin/openrc-run
+
+WIREGUARD_FILE='us-qas-wg-102.conf'
+USER='shield'
+
+depend() {
+	need net
+}
+
+start () {
+	wg-quick up /home/$USER/.config/wireguard/$WIREGUARD_FILE
+}
+
+stop () {
+	wg-quick down /home/$USER/.config/wireguard/$(wg show interfaces).conf
+}
+
+status () {
+	wg
+}
