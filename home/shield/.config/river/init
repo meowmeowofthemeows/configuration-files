@@ -1,5 +1,10 @@
 #!/bin/sh
 
+# env variables
+
+export WLR_NO_HARDWARE_CURSORS=1
+export WLR_RENDERER=vulkan
+
 # display
 
 wlr-randr --output DP-1 --mode 1920x1080@239.761002
