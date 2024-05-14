@@ -20,7 +20,9 @@ riverctl input pointer-1133-16518-Logitech_G703_LS accel-profile flat
 # wallpaper
 nohup swaybg --image $HOME/Pictures/wallpaperpatterntemplate2.png >/dev/null 2>&1 &
 
-riverctl border-width 1
+# border
+riverctl rule-add -app-id '*' ssd
+riverctl border-width 0
 
 # binds
 riverctl map normal Super Return spawn foot
