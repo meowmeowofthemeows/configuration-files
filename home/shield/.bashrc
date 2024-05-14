@@ -2,7 +2,7 @@
 
 # prompt
 
-PS1='[ $(date +"%H:%M:%S") ] [ \u@\h ] [ \W/ ] $ '
+PS1='[ \u@\h ] [ \W/ ] $ '
 
 # aliases
 alias doas="doas "
