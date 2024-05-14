@@ -1,0 +1,39 @@
+configuration {
+        modes: "drun";
+        font: "mono 8";
+}
+element {
+        padding: 1px;
+        cursor: pointer;
+        spacing: 1px;
+        border: 0;
+}
+textbox, button, prompt {
+        text-color: rgba(0, 0, 0, 100%);
+}
+element normal.normal, element normal.urgent, element normal.active, element alternate.normal, element alternate.urgent, element alternate.active {
+        background-color: rgba(237, 236, 237, 100%);
+}
+element selected.normal, element selected.urgent, element selected.active {
+        background-color: rgba(0, 0, 0, 100%);
+        text-color: rgba(237, 236, 237, 100%);
+}
+window {
+        width: 330px;
+        padding: 0;
+        background-color: rgba(237, 236, 237, 100%);
+        border: 1;
+        border-color: rgba(161, 161, 161, 100%);
+}
+listview {
+        scrollbar: false;
+}
+entry {
+        cursor: default;
+        placeholder-color: rgba(0, 0, 0, 100%);
+        placeholder: "search";
+}
+textbox-prompt-colon {
+        margin: 0px;
+        str: "";
+}
