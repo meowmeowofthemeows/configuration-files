@@ -1,1 +1,0 @@
-img=$HOME/images/screenshots/"$(date +"%d-%m-%y_%H:%M:%S_selscr_grim.png")" && grim -g "$(slurp -b bb508822 -c 00000000 &)" $img && $(slurp -b bb508922 & sleep 0.1 && killall slurp) && wl-copy < $img
