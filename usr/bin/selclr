@@ -1,0 +1,1 @@
+grim -g "$(slurp -p -b bb508822 -c 00000000 &)" - | magick - -format '%[hex:u]' info:- | wl-copy
